@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Find DNS within IP range</title>
+</head>
+<body>
+    <h1>Найти все домены, присутствующие в SSL сертификатах, заданных IP адресов</h1>
+    <form method="get" action="/getAllDNSByIPRange">
+        <label>Введите IP адрес с маской, например, 51.38.24.0/24<input name="ip-range" type="text"></label>
+        <label>Введите количество потоков<input name="threadsNumber" type="text"></label>
+        <input type="submit" value="Найти">
+    </form>
+</body>
+</html>
